@@ -17,7 +17,7 @@
       <section>
         <div class="bill">
           <label for="yourBill">Bill</label>
-          <input type="number" placeholder="Your bill" id="yourBill" onclick="update()" />
+          <input type="number" placeholder="Your bill" id="yourBill" oninput="update()" />
         </div>
         <div>
           <div class="space-between">
@@ -65,7 +65,8 @@
 
     <script>
        function update () {
-        console.log(*function called*);
+        let bill = document.getElementById("yourBill");
+        console.log(bill);
        }
       
       
